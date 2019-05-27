@@ -26,7 +26,7 @@ Use DEV environment by running : npm start (which will call ng serve)
 **Please note** for the purpose of this app, CSS was done from scratch but it was **NOT** made responsive (out of scope). So use it on a desktop browser.
 
 ## Back end
-Spring boot application, with an H2 (in memory) database used for the purpose of the demo.
+Spring boot application + JPA + an H2 (in memory) database used for the purpose of the demo.
 - Some unit and integration testing included.
 
 ### run
