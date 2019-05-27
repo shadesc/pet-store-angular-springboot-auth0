@@ -1,4 +1,4 @@
-# Coding Challenge
+# Coding Challenge - Author: Chadi Cortbaoui
 ### Coding challenge which I built for a full stack interview in early 2018
 ➔ **4 days** deadline for delivery of a fully functional application
 - Angular 5
