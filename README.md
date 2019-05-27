@@ -1,6 +1,6 @@
-# Coding Challenge for one of my interviews in 2018
-### Archived coding challenge which I built for a full stack interview in early 2018
-➔ **4 days** deadline to deliver it
+# Coding Challenge
+### Coding challenge which I built for a full stack interview in early 2018
+➔ **4 days** deadline for delivery of a fully functional application
 - Angular 5
 - Spring Boot 2.0.1
 - (BONUS) Provide authentication and authorization: Used [Auth0](https://auth0.com/) with Angular's [AuthGuard / CanActivate](https://angular.io/api/router/CanActivate)
