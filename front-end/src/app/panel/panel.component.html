@@ -1,0 +1,18 @@
+<ul>
+  <li [routerLink]="['']"><img src="assets/home.svg">&nbsp;Home</li>
+  <li class="panel-command search-pet">
+    <form>
+        <input type="text" #search ngModel placeholder="Find Pet by ID..." name="name" >
+        <input type="submit" value="Find" (click)="findPetById(search.value)">
+    </form>
+  </li>
+  <li class="panel-command id-filter">
+    <label>Filter by</label>
+    <select disabled>
+      <option value="all">All</option>
+      <option value="available">Available</option>
+      <option value="sold">Sold</option>
+    </select>
+  </li>
+  <li (click)="addPet()" class="panel-command add-pet">Add Pet</li>
+</ul>

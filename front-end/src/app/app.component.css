@@ -1,0 +1,61 @@
+ul {
+    padding: 1em 1em 0.5em 1em;
+    margin: 0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    flex:1 1 auto;
+}
+
+li.side-panel {
+    flex: 1 1 auto;
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0 0.7em;
+}
+
+li.content-panel {
+    flex: 1 1 80%;
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+li.middle {
+    flex: 1 1 auto;
+}
+
+.application-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    color: #006ABB;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.application-container .header {
+    flex: 0 1 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    background: linear-gradient(to bottom right, #fff,lightblue);
+    color: #006ABB;
+}
+
+/* Will fill remaining space */
+.application-container .content {
+    flex: 1 1 auto;
+    display:flex;
+}
+
+.application-container .footer {
+    flex: 0 1 3em;
+    box-shadow: 0 1px 1px 0 #C7C7C7 inset;
+    text-align: center;
+}
+
+.application-container .footer {
+    color: white;
+    background-color: #585858;
+}

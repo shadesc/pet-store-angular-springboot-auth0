@@ -1,0 +1,79 @@
+ul {
+    padding: 1em 0 0 0;
+    margin: 0;
+    list-style: none;
+    display:flex;
+    height:100%;
+    flex-direction: column;
+}
+
+li {
+    cursor: pointer;
+    text-align: center;
+}
+
+li:focus {
+    outline:0;
+}
+
+li.panel-command {
+    padding: 1em 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+form input {
+    flex:1 1 auto;
+}
+
+li.id-filter {
+    display: grid;
+    padding: 1em 0 3.5em 0;
+}
+
+li input,
+li select,
+li button {
+    padding:1em 0.5em;
+}
+
+li label {
+    text-align: left;
+    padding: 0.5em 0;
+}
+img {
+    width: 1em;
+}
+
+li.add-pet {
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+li.add-pet:hover{
+    border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+li input[type=submit]{
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    background:none;
+    color:#006ABB;
+    cursor: pointer;
+    font-weight: inherit;
+}
+
+li input[type=submit]:hover {
+    border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+select {
+    opacity:0.6;
+}

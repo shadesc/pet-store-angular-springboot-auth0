@@ -1,0 +1,101 @@
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+select, input {
+    padding: 1em;
+}
+
+label {
+    padding: 1em 0;
+}
+
+select,input, label{
+    font-size:1em;
+}
+
+fieldset {
+    margin-top:1em;
+    border-color: #006ABB;
+    border-style: dashed;
+}
+
+div.pet-tags-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.pet-tag-field {
+    flex: 1 1 50%;
+    padding: 1em 0;
+}
+
+input[type=checkbox] {
+    width:1em;
+    height:1em;
+}
+
+ul {
+    padding: 1em 0;
+    margin: 0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+ padding: 1em;
+}
+
+div.add-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type=text] {
+    flex: 1 1 auto;
+}
+
+img {
+    width: 100%;
+    max-width: 10em;
+}
+
+input[type=button] {
+    cursor: pointer;
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    background: none;
+    color:#006ABB;
+}
+
+input[type=button]:hover {
+    border-bottom: 0 none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+/*
+    Handling template driven ngForm validation css
+    ng-touched: Controls have been visited
+    ng-untouched: controls have not been visited
+    ng-dirty : control value has been changed
+    ng-pristine:Controls value have not been changed
+    ng-valid : control values are valid
+    ng-invalid : control values are invalid
+*/
+.ng-valid[required], 
+.ng-valid.required {
+    border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+}
+
+span.help-invalid {
+    color:#a94442;
+}

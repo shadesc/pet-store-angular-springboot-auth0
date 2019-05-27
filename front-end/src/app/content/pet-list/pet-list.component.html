@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let pet of petList">
+    <app-pet-display [pet]="pet"></app-pet-display>
+    <div *ngIf="authService.isLoggedIn && authService.privileged">
+      <a [routerLink]="['/pets','edit', pet.id]">Edit</a>
+      <a [routerLink]="['/pets','delete', pet.id]" *ngIf="pet.status ==='sold'">Delete</a>
+    </div>
+  </li>
+</ul>
+<span *ngIf="error" class="error-display">{{error}}</span>

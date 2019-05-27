@@ -1,0 +1,27 @@
+<img [src]="pet.photoUrls[0] || 'assets/picture-not-available.jpg'">
+<ul>
+  <li [ngClass]="[pet.status === 'available' ? 'available':'sold']">
+    {{pet.status}}
+  </li>
+  <li>
+    <fieldset [ngClass]="[pet.status === 'available' ? 'favailable':'fsold']">
+      <legend>Name</legend>
+      <span>{{pet.name}}</span>
+    </fieldset>
+  </li>
+  <li>
+    <fieldset [ngClass]="[pet.status === 'available' ? 'favailable':'fsold']">
+      <legend>Category</legend>
+      <span>{{pet.category.name}}</span>
+    </fieldset>
+  </li>
+  <li>
+    <fieldset [ngClass]="[pet.status === 'available' ? 'favailable':'fsold']">
+      <legend>Tags</legend>
+      <span *ngFor="let tag of pet.tags; let i = index">
+        {{tag.name}}
+        <span *ngIf=" i < pet.tags.length-1">&#x0002C;</span>
+      </span>
+    </fieldset>
+  </li>
+</ul>

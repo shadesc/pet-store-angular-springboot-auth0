@@ -1,0 +1,51 @@
+<form class="pet-form" (ngSubmit)="onSubmit(petForm)" #petForm='ngForm'>
+  <label for="category-dropdown">Pet Category</label>
+  <select id="category-dropdown" [(ngModel)]="selectedCategory" name="category">
+    <option *ngFor="let category of allPetCategories" [value]="category.id">{{category.name}}</option>
+  </select>
+
+
+  <label for="pet-name">Pet Name</label>
+  <input id="pet-name" [pattern]="'^[a-zA-Z0-9 \-\']+'" minlength="2" #petName="ngModel" type="text" [value]="pet? 'pet.name':''" name="name"
+    required [(ngModel)]="currentName">
+  <span class="help-invalid" *ngIf="(petName.untouched || petName.touched) && !petName.valid">
+    Please enter a valid Pet name. Only alphanumeric
+    <b>a-zA-Z0-9</b> allowed. Min 2 characters.
+  </span>
+
+  <fieldset>
+    <legend>Photos</legend>
+    <div class="add-photo">
+      <input type="text" #photoUrl="ngModel" [(ngModel)]="currentInputPhotoURL" placeholder="Paste photo URL..." name="photoUrls"
+        value="" [pattern]="'^(https?:\/\/.*\.(?:png|jpg))'">
+      <button type="button" [disabled]="!photoUrl.valid" (click)="addPhotoUrl(photoUrl);this.currentInputPhotoURL=''">Add Url</button>
+    </div>
+    <span class="help-invalid" *ngIf="photoUrl.touched && !photoUrl.valid">
+      Please enter a valid Photo URL.
+    </span>
+
+    <ul>
+      <li *ngFor="let url of photoUrls">
+        <img [src]="url">
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend>Pet Tags</legend>
+    <div class="pet-tags-container">
+      <div *ngFor="let tag of allPetTags" class="pet-tag-field" name="tags" ngModelGroup="tags">
+        <input type="checkbox" [id]="tag.id" [ngModel]="tagChecked(tag)" [name]="tag.id" [value]="tag.id">
+        <label for="{{tag.id}}">{{tag.name}}</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <label>Status</label>
+  <select [(ngModel)]="selectedStatus" name="status">
+    <option *ngFor="let st of allPetStatus" [value]="st.status">{{st.status}}</option>
+  </select>
+
+
+  <button type="submit" id="register" [disabled]="!petForm.form.valid">Submit</button>
+</form>

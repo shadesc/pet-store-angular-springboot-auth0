@@ -1,0 +1,11 @@
+<div>
+  <p>Welcome to the online pet Store</p>
+  <ul>
+    <li (click)="authService.logout()" *ngIf="authService.isLoggedIn">
+      <a>Log Out</a>
+    </li>
+    <li (click)="authService.login()" *ngIf="!authService.isLoggedIn">
+      <a>Log In</a>
+    </li>
+  </ul>
+</div>

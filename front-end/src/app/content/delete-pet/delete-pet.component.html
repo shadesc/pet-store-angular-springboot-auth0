@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    <li>Are you sure you would like to delete Pet: {{petID}}?</li>
+    <li class="delete-button"(click)="deletePet()">
+      <a>Delete</a>
+    </li>
+    <li class="delete-button" [routerLink]="['/','list']">
+      <a>Cancel</a>
+    </li>
+  </ul>
+</div>
