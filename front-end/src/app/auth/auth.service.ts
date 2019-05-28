@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { Injectable } from '@angular/core';
 import * as auth0 from 'auth0-js';
 import { environment } from './../../environments/environment';

@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';

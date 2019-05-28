@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { PetFormComponent } from './../../shared/form/pet-form/pet-form.component';
 import { PetCategory } from './../../models/petCategory.model';
 import { PetTags } from './../../models/petTags.model';

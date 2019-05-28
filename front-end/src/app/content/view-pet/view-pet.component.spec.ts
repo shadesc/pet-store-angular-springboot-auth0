@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { PetDisplayComponent } from './../../shared/pet/pet-display/pet-display.component';
 import { PetListComponent } from './../pet-list/pet-list.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';

@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { Component, OnInit, Input  } from '@angular/core';
 import { Pet } from '../../../models/pet.model';
 

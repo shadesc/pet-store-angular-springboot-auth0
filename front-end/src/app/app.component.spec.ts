@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { HeaderComponent } from './header/header.component';
 import { PanelComponent } from './panel/panel.component';
 import { AppRoutingModule } from './app-routing.module';

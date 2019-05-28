@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 export const environment = {
   production: true,
   apiEndpoint: 'http://pet-store-ace.us-west-2.elasticbeanstalk.com',

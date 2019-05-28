@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { AppConstants } from './../../app-constants.component';
 import { PetStatus } from './../../../models/petStatus.model';
 import { PetTags } from './../../../models/petTags.model';

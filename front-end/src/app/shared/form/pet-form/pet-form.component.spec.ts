@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 import { PetApiService } from './../../pet-api.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 

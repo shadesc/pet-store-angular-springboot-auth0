@@ -1,3 +1,7 @@
+/**
+ * Archive - Coding challenge from interview 2018
+ * Author: Chadi Cortbaoui
+ */
 package com.chadic.interview.code.customExceptions;
 
 import org.springframework.http.HttpStatus;
