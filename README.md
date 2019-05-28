@@ -1,4 +1,4 @@
-# Interview Coding Challenge
+# Interview Coding Challenge - Build a pet store
 Presented by: Chadi Cortbaoui
 ### Coding challenge which I built for a full stack interview in early 2018
 ➔ **4 days** deadline for delivery of a fully functional application
