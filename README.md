@@ -1,6 +1,6 @@
-# Interview Coding Challenge - Build a pet store
-Presented by: Chadi Cortbaoui
-### Coding challenge which I built for a full stack interview in early 2018
+# Online Pet Store - Interview Coding Project
+Presented by - [Chadi Cortbaoui](https://www.linkedin.com/in/chadicortbaoui/)
+### Coding challenge that I built for a senior full stack engineering interview in early 2018
 ➔ **4 days** deadline for delivery of a fully functional application
 - Angular 5
 - Spring Boot 2.0.1
